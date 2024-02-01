@@ -1,0 +1,6 @@
+to build docker file: docker build -t image_name .
+to see image: docker images 
+to see running process: docker ps 
+to run a image: docker run --name containerName -p 4000:4000 -d imageName
+to stop a container: docker stop containerName
+to run a container: docker start containerName 

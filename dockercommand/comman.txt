@@ -1,6 +1,14 @@
 to build docker file: docker build -t image_name .
+with volume: docker build -t imagename:version
+
 to see image: docker images 
 to see running process: docker ps 
 to run a image: docker run --name containerName -p 4000:4000 -d imageName
+
+with volume: docker run --name containerName -p 4000:4000 --rm -v C:\Users\shahabuddin akhon hr\Documents\Docker:\app imageName:version
+
+
 to stop a container: docker stop containerName
 to run a container: docker start containerName 
+to delete a image: docker image rm imageName -f 
+to delete all images and container: docker system prune

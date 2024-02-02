@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  simple:
+    build: ./simple
+    container_name: sample_container
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./simple:/app
+      - ./app/node_modules

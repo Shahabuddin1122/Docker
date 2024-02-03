@@ -12,3 +12,4 @@ to stop a container: docker stop containerName
 to run a container: docker start containerName 
 to delete a image: docker image rm imageName -f 
 to delete all images and container: docker system prune
+for docker-compose:      docker compose up

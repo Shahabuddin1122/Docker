@@ -2,9 +2,15 @@ version: "3.8"
 services:
   simple:
     build: ./simple
-    container_name: sample_container
+    container_name: backend_container
     ports:
       - "4000:4000"
     volumes:
       - ./simple:/app
-      - ./app/node_modules
+  frontend:
+    build: ./Frontend
+    container_name: frontend_container
+    ports:
+      - "5173:5173"
+    stdin_open: true
+    tty: true
